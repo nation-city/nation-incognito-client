@@ -1,0 +1,33 @@
+{
+  "name": "nation-incognito-client",
+  "version": "0.1.0",
+  "description": "The open-source client side of NATION Incognito: prompts are encrypted on your device to an attested enclave key, and replies are verified and decrypted locally.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "homepage": "https://thenation.city",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "cli": "node src/cli.ts"
+  },
+  "dependencies": {
+    "@phala/aci-verifier": "0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.0"
+  },
+  "keywords": [
+    "nation",
+    "privacy",
+    "e2ee",
+    "confidential-computing",
+    "tee",
+    "attestation",
+    "llm"
+  ],
+  "private": true
+}
